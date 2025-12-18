@@ -1,10 +1,7 @@
 name: AWS OIDC Authentication Demo
 
 on:
-  # Manual trigger (recommended for security demos)
   workflow_dispatch:
-
-  # Temporary push trigger to force visibility & first run
   push:
     branches:
       - main
@@ -25,7 +22,8 @@ jobs:
       - name: Configure AWS credentials using OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::925213603952:role/GitHubOIDCRole
+          # ✅ CORRECT ROLE ARN (SINGLE, VALID ARN)
+          role-to-assume: arn:aws:iam::925213603952:role/GitHubActionsOIDCRole
           aws-region: us-east-1
 
       - name: Verify AWS identity via STS
