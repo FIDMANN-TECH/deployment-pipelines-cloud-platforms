@@ -1,0 +1,14 @@
+name: Security Scan
+
+on:
+  pull_request:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dependency audit
+        run: npm audit --audit-level=high
