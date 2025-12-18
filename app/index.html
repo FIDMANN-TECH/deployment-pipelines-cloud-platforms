@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enterprise CI/CD Platform</title>
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #2563eb;
+      --success: #16a34a;
+      --warning: #ca8a04;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: .5rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--secondary);
+      font-size: 1.25rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: .25rem .6rem;
+      border-radius: 999px;
+      font-size: .75rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .success { background: var(--success); }
+    .warning { background: var(--warning); }
+    .info { background: var(--secondary); }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #e5e7eb;
+      font-size: .85rem;
+      margin-top: 2rem;
+    }
+
+    .pipeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+
+    .step {
+      flex: 1;
+      background: #e0e7ff;
+      padding: .6rem;
+      border-radius: 6px;
+      text-align: center;
+      font-size: .85rem;
+      font-weight: 600;
+    }
+
+    .env {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .5rem;
+      font-size: .9rem;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: .2rem .4rem;
+      border-radius: 4px;
+      font-size: .85rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Enterprise CI/CD Platform</h1>
+  <p>Secure • Automated • Zero-Downtime Deployment</p>
+</header>
+
+<main>
+
+  <!-- Deployment Status -->
+  <section class="card">
+    <h2>Deployment Status</h2>
+    <p>
+      Environment:
+      <span class="badge info">Production</span>
+    </p>
+    <p>
+      Health:
+      <span class="badge success">Healthy</span>
+    </p>
+    <p>
+      Version:
+      <code>v1.0.0</code>
+    </p>
+    <div class="env">
+      <span>Platform:</span>
+      <strong>Render / AWS</strong>
+    </div>
+  </section>
+
+  <!-- CI/CD Pipeline -->
+  <section class="card">
+    <h2>CI/CD Pipeline</h2>
+    <div class="pipeline">
+      <div class="step">Code</div>
+      <div class="step">CI</div>
+      <div class="step">Security</div>
+      <div class="step">Release</div>
+      <div class="step">Deploy</div>
+    </div>
+    <p style="margin-top:1rem">
+      Automated using <strong>GitHub Actions</strong> with approval-based production releases.
+    </p>
+  </section>
+
+  <!-- Security -->
+  <section class="card">
+    <h2>Security Model</h2>
+    <ul>
+      <li>OIDC authentication (no cloud secrets)</li>
+      <li>Short-lived credentials</li>
+      <li>Protected production environment</li>
+      <li>Audit-ready deployment logs</li>
+    </ul>
+    <span class="badge success">Enterprise-Grade</span>
+  </section>
+
+  <!-- Deployment Strategy -->
+  <section class="card">
+    <h2>Deployment Strategy</h2>
+    <ul>
+      <li>Blue-Green deployment</li>
+      <li>Zero downtime releases</li>
+      <li>Instant rollback capability</li>
+      <li>Health-check driven validation</li>
+    </ul>
+  </section>
+
+  <!-- Observability -->
+  <section class="card">
+    <h2>Observability</h2>
+    <ul>
+      <li>Health endpoint monitoring</li>
+      <li>GitHub Actions logs</li>
+      <li>Deployment timestamps</li>
+    </ul>
+    <p>
+      Endpoint: <code>/health</code>
+    </p>
+  </section>
+
+  <!-- Cost Control -->
+  <section class="card">
+    <h2>Cost Optimization</h2>
+    <ul>
+      <li>GitHub Actions – Free tier</li>
+      <li>Render – Free plan</li>
+      <li>AWS – Optional / minimal usage</li>
+    </ul>
+    <span class="badge success">Low-Cost Architecture</span>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © 2025 • Enterprise CI/CD Coursework Project  
+    <br/>
+    Designed with real-world DevOps best practices
+  </p>
+</footer>
+
+</body>
+</html>
