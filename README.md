@@ -223,3 +223,4 @@ This project demonstrates how modern DevOps teams implement secure, automated, a
 ![pull-request](./img/16_pull_request_created_for_security_scan.png)
 ![pull-request-merged](./img/17_pull_request_merged_after_security_checks.png)
 ![security-scan-pull-request](./img/18_security_scan_pull_request.png)
+![github-release-v1.0.1](./img/19_github_release_v1_0_1.png)
