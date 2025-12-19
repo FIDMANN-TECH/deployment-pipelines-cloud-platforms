@@ -202,3 +202,24 @@ GitHub Actions logs
 ## ✅ Conclusion
 
 This project demonstrates how modern DevOps teams implement secure, automated, and cost-efficient CI/CD pipelines using GitHub Actions, OIDC-based authentication, and managed deployment platforms.
+
+
+## Below are screenshots of workflow:
+![npm-installation](./img/01_npm_install.png)
+![ci-pipeline-success](./img/02_ci_pipeline_success.png)
+![security-scan](./img/03_security_scan.png)
+![local-server-running](./img/04_local_server_running.png)
+![local-app-running](./img/05_local_app_running.png)
+![aws-IAM-oidc-identity-provider](./img/06_AWS_IAM_GitHub_Actions_OIDC_Identity_Provider.png)
+![IAM-role](./img/07_github_actions_OIDC_Role.jpeg)
+![git-add-commit-push](./img/08_git_add_commit_push.png)
+![project-structure](./img/09_github_repo_project_structure.png)
+![github-workflows-overview](./img/10_github_actions_workflows_overview.png)
+![ci-pipeline-succeeded](./img/11_ci_pipeline_success.png)
+![deployment-render-succeeded](./img/12_deploy_to_render_success.png)
+![deploy-aws-oidc](./img/13_aws_oidc_sts_identity.png)
+![render-deployment-success](./img/14_render_deployment_success.png)
+![render-environment-variables](./img/15_render_environment_variables.png)
+![]()
+![]()
+![]()
