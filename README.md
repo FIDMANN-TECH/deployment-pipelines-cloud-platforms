@@ -106,7 +106,7 @@ Aligns with modern cloud security best practices
 
 Fully auditable and identity-based
 
-### uthentication Flow
+### Authentication Flow
 GitHub Actions
 → OIDC Token
 → AWS STS
@@ -118,7 +118,7 @@ GitHub Actions
 No AWS infrastructure (EC2, ECS, S3, etc.) is deployed.
 
 ## 🔐 AWS IAM Configuration
-A️⃣ IAM Role Trust Policy (OIDC)
+### A️ IAM Role Trust Policy (OIDC)
 
 This trust policy allows only this GitHub repository to assume the IAM role using OIDC.
 
@@ -143,7 +143,7 @@ This trust policy allows only this GitHub repository to assume the IAM role usin
   ]
 }
 
-## B️⃣ IAM Permissions Policy (Minimal Example)
+### B️ IAM Permissions Policy (Minimal Example)
 
 This policy defines what the role can do after being assumed.
 Permissions are intentionally minimal for demonstration purposes.
